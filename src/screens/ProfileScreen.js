@@ -4,6 +4,7 @@ import "./ProfileScreen.css";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
+import PlansScreen from "./PlansScreen.js";
 
 function ProfileScreen() {
   //get the logged in user name
@@ -27,6 +28,10 @@ function ProfileScreen() {
 
             <div className="profileScreen__plans">
               <h3>Plans</h3>
+
+              {/* Seperate component for dynamically changing plans */}
+              <PlansScreen />
+
               <button
                 onClick={() => auth.signOut()}
                 className="profileScreen__signOut"

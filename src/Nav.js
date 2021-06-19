@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -29,15 +29,17 @@ function Nav() {
     // Make black navbar transperent after scrolling down, make it black again when it comes back
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__contents">
+        {/* Navbar netlfix logo */}
 
-      {/* Navbar netlfix logo */}
-        <img
-          className="nav__logo"
-          src="https://www.abacustechnologies.com/wp-content/uploads/2020/05/580b57fcd9996e24bc43c529.png "
-          alt=""
-        />
+        <Link to="/">
+          <img
+            className="nav__logo"
+            src="https://www.abacustechnologies.com/wp-content/uploads/2020/05/580b57fcd9996e24bc43c529.png "
+            alt=""
+          />
+        </Link>
 
-      {/* Profile avatar on rhs (on click, save history and push to profile screen) */}
+        {/* Profile avatar on rhs (on click, save history and push to profile screen) */}
         <img
           onClick={() => history.push("/profile")}
           className="nav__avatar"

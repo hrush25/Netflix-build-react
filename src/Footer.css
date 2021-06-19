@@ -1,0 +1,118 @@
+.foot_main {
+  border-top: 0.5px solid darkgray;
+  color: rgb(161, 161, 161);
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 350px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  position: sticky;
+}
+.foot_div1 {
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.foot_ul1 {
+  width: 200px;
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 78px;
+  padding: 20px;
+}
+
+.foot_ul2 {
+  width: 200px;
+
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 20px;
+}
+.foot_ul3 {
+  width: 200px;
+
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 20px;
+}
+.foot_ul4 {
+  width: 200px;
+
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 20px;
+}
+.content_li {
+  padding: 8px;
+}
+.links {
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+}
+.links:hover {
+  color: #fff;
+}
+
+.language {
+  font-family: "PT Sans", sans-serif;
+  position: relative;
+  padding: 15px;
+  font-size: 15px;
+  margin-top: 290px;
+  margin-left: -1200px;
+  color: grey;
+  background: black;
+}
+
+/* Footer copyright part  */
+.copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  align-content: center;
+  display: flex;
+  flex-direction: row !important;
+}
+
+.App-logo {
+  position: relative;
+  top: 230px;
+  right: 620px;
+  height: 7vmin;
+  pointer-events: none;
+}
+
+.copy-text {
+  display: flex;
+  flex: 1;
+  font-family: Inter, sans-serif;
+  color: grey;
+  position: relative;
+  top: 210px;
+  right: 450px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+}
+
+.powersof__text {
+  margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

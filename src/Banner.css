@@ -54,10 +54,17 @@
   margin-top: 20px;
   background-color: rgba(51, 51, 51, 0.5);
   padding-bottom: 0.5rem;
+  align-content: center;
 }
 
 .banner__button:hover {
   background-color: #e6e6e6;
   color: #000;
   transition: all 0.2s;
+}
+
+.button__infoicon,
+.button__playicon {
+  margin-right: 10px;
+  width: 50px;
 }

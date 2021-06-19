@@ -3,7 +3,6 @@ import "./Banner.css";
 import axios from "./axios";
 import requests from "./Requests";
 
-
 function Banner() {
   // setting movies on banner
   const [movie, setMovie] = useState([]);
@@ -53,7 +52,7 @@ function Banner() {
         </h1>
 
         <div className="banner__buttons">
-          <button className="banner__button fas fa-play">Play</button>
+          <button className="banner__button">Play</button>
           <button className="banner__button">More Info</button>
         </div>
       </div>
