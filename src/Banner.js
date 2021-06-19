@@ -48,7 +48,7 @@ function Banner() {
 
         <h1 className="banner__description">
           {/* truncate description after 150 chars */}
-          {truncate(`${movie?.overview}`, 150)}
+          {truncate(`${movie?.overview}`, 160)}
         </h1>
 
         <div className="banner__buttons">

@@ -1,7 +1,12 @@
 .row {
   color: white;
   margin-left: 20px;
+  margin-top: 40px;
   font-family: Inter, sans-serif;
+}
+
+.row__title {
+  margin-left: 40px;
 }
 
 .row__posters {
@@ -16,11 +21,13 @@
 }
 
 .row__poster {
-  max-height: 100px;
+  max-height: 140px;
   object-fit: contain;
   margin-right: 10px;
   width: 100%;
   transition: transform 450ms;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .row__poster:hover {

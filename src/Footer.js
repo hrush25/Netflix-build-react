@@ -116,18 +116,18 @@ function Footer() {
           </ul>
         </div>
 
-        <div class="copyright">
+        {/* <div class="copyright">
           <div className="copy-text">
             <span>Made with ❤️ & Passion by Hrushabh Kale.</span>
             <br /> <br />
             {/* <span className="powersof__text">By powers of:</span> */}
-          </div>
+        {/* </div>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
             className="App-logo"
             alt="logo"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
