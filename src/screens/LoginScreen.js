@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignUpScreen from "./SignUpScreen.js";
+import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 function LoginScreen() {
   const [signIn, setSignIn] = useState(false);
@@ -8,12 +10,13 @@ function LoginScreen() {
   return (
     <div className="loginScreen">
       <div className="loginScreem__background ">
-        <img
-          className="loginScreen__logo"
-          src="https://www.abacustechnologies.com/wp-content/uploads/2020/05/580b57fcd9996e24bc43c529.png"
-          alt=""
-        />
-
+        <Link to="/">
+          <img
+            className="loginScreen__logo"
+            src="https://www.abacustechnologies.com/wp-content/uploads/2020/05/580b57fcd9996e24bc43c529.png"
+            alt=""
+          />
+        </Link>
         <button onClick={() => setSignIn(true)} className="loginScreen__button">
           Sign in
         </button>
@@ -40,7 +43,7 @@ function LoginScreen() {
                     onClick={() => setSignIn(true)}
                     className="loginScreen__getStarted"
                   >
-                    GET STARTED
+                    Get Started
                   </button>
                 </form>
               </div>
