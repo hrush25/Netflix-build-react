@@ -94,3 +94,7 @@
   border: none;
   cursor: pointer;
 }
+
+.loginScreen__getStarted:hover {
+  background-color: #d30914;
+}

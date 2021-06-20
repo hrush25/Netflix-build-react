@@ -33,6 +33,10 @@
   margin-top: 20px;
 }
 
+.signIn__button:hover {
+  background-color: #d30914;
+}
+
 .signupScreen > form > h1 {
   text-align: left;
   margin-bottom: 25px;

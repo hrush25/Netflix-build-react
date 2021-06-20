@@ -1,135 +1,50 @@
 import React from "react";
 import "./Footer.css";
+import { ArrowDropDown, Language } from "@material-ui/icons";
 
-function Footer() {
+const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <>
-      <div className="foot_main">
-        {/* <li>Question ? Contact us.</li> */}
-        <div className="foot_div1">
-          <ul className="foot_ul1">
-            <li className="content_li">
-              <a className="links" href="https://help.netflix.com/en/node/412">
-                FAQ
-              </a>
-            </li>
-            <li className="content_li">
-              <a className="links" href="http://ir.netflix.com/">
-                Investor Relations
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://help.netflix.com/legal/privacy"
-              >
-                Privacy
-              </a>
-            </li>
-            <li className="content_li">
-              <a className="links" href="https://fast.com/">
-                Speed Test
-              </a>
-            </li>
-          </ul>
+    <div className="footer">
+      <div className="footer_contact">Questions? Contact Us</div>
+      <div className="footer_container">
+        <div>
+          <p>FAQ</p>
+          <p>Investor Relations</p>
+          <p>Privacy</p>
+          <p>Speed Test</p>
         </div>
-        <div className="foot_div2">
-          <ul className="foot_ul2">
-            <li className="content_li">
-              <a className="links" href="https://help.netflix.com/">
-                Help Centre
-              </a>
-            </li>
-            <li className="content_li">
-              <a className="links" href="https://jobs.netflix.com/jobs">
-                Jobs
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://help.netflix.com/legal/privacy#cookies"
-              >
-                Cookie Preferences
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://help.netflix.com/legal/notices"
-              >
-                Legal Notices
-              </a>
-            </li>
-          </ul>
+        <div>
+          <p>Help Center</p>
+          <p>Jobs</p>
+          <p>Cookie Preferences</p>
+          <p>Legal Notices</p>
         </div>
-        <div className="foot_div3">
-          <ul className="foot_ul3">
-            <li className="content_li">
-              <a className="links" href="https://www.netflix.com/youraccount">
-                Account
-              </a>
-            </li>
-            <li className="content_li">
-              <a className="links" href="https://www.netflix.com/watch">
-                Ways to Watch{" "}
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://help.netflix.com/legal/corpinfo"
-              >
-                Corporate Information
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://www.netflix.com/in/browse/genre/839338"
-              >
-                Netflix Originals
-              </a>
-            </li>
-          </ul>
+        <div>
+          <p>Account</p>
+          <p>Ways to Watch</p>
+          <p>Corporate Informatioon</p>
+          <p>Netflix Originals</p>
         </div>
-        <div className="foot_div4">
-          <ul className="foot_ul4">
-            <li className="content_li">
-              <a className="links" href="https://media.netflix.com/">
-                Media Centre
-              </a>
-            </li>
-            <li className="content_li">
-              <a
-                className="links"
-                href="https://help.netflix.com/legal/termsofuse"
-              >
-                Terms of Use
-              </a>
-            </li>
-            <li className="content_li">
-              <a className="links" href="https://help.netflix.com/contactus">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+        <div>
+          <p>Careers</p>
+          <p>Media Center</p>
+          <p>Terms of Use</p>
+          <p>Contact Us</p>
         </div>
-
-        {/* <div class="copyright">
-          <div className="copy-text">
-            <span>Made with ❤️ & Passion by Hrushabh Kale.</span>
-            <br /> <br />
-            {/* <span className="powersof__text">By powers of:</span> */}
-        {/* </div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
-            className="App-logo"
-            alt="logo"
-          />
-        </div> */}
       </div>
-    </>
+      <div className="footer_language">
+        <button className="footer_button">
+          <Language /> <span>English</span> <ArrowDropDown />
+        </button>
+
+        <p className="footer__credits">
+          Made with ❤️ & Passion By{" "}
+          <span className="footer__myname">Hrushabh Kale</span>.
+        </p>
+      </div>
+    </div>
   );
-}
+};
+
 export default Footer;

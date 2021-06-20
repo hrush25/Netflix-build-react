@@ -48,6 +48,10 @@
   cursor: pointer;
 }
 
+.profileScreen__signOut:hover {
+  background-color: #d30914;
+}
+
 .profileScreen__plans {
   margin-top: 20px;
 }

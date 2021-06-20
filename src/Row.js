@@ -21,6 +21,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     fetchData();
   }, [fetchUrl]);
 
+  // handling onClick movie poster -run trailer
   const handleTrailer = movie => {
     if (trailerUrl) {
       setTrailerUrl("");
@@ -34,6 +35,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     }
   };
 
+  // Trailer popup options
   const opts = {
     height: "390",
     width: "100%",
@@ -65,6 +67,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
               )
           )}
       </div>
+      
+      {/* Activating Youtube component */}
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
